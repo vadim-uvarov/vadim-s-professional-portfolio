@@ -149,7 +149,8 @@ function Nav() {
         </ul>
         <a
           href={CV_URL}
-          download
+          target="_blank"
+          rel="noreferrer noopener"
           className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
         >
           <Download className="h-4 w-4" aria-hidden="true" />
@@ -191,7 +192,7 @@ function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg">
-              <a href={CV_URL} download>
+              <a href={CV_URL} target="_blank" rel="noreferrer noopener">
                 <Download className="mr-2 h-4 w-4" aria-hidden="true" />
                 Download CV (PDF)
               </a>
